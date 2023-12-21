@@ -1,0 +1,76 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -100%);
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input {
+    width: 300px;
+}
+
+.color {
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid white;
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.orientation {
+    background-color: white;
+    height: 30px;
+    border-radius: 5px;
+    width: 140px;
+    align-self: flex-start;
+    padding: 5px;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    margin:  0 10px;
+}
+
+.colorpicker {
+    display: none;
+}
+
+
+.copyPopup{
+    opacity: 0;
+    position: absolute;
+    bottom: -60px;
+    left: 30%;
+    transform: translate(-50%,0);
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
